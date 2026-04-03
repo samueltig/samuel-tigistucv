@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Tigstu | Web Developer & Creative Technologist</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-dark text-light overflow-x-hidden">
+    <!-- Custom Cursor -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container flex justify-between items-center py-6">
+        <div class="logo font-display font-bold text-2xl tracking-tighter">
+          <span class="text-primary">S</span>AMUEL<span class="text-secondary">.</span>
+        </div>
+        <div class="nav-links hidden md:flex gap-8 items-center">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <button class="btn-primary-sm">Resume</button>
+        </div>
+        <div class="md:hidden menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section min-h-screen flex items-center relative overflow-hidden">
+      <div class="hero-bg-elements absolute inset-0 -z-10">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+      <div class="container relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="hero-content">
+            <span class="badge mb-6">Available for Freelance</span>
+            <h1 class="hero-title font-display font-black text-6xl md:text-8xl mb-6">
+              Samuel <br />
+              <span class="text-gradient">Tigstu</span>
+            </h1>
+            <div class="typing-container mb-8">
+              <p id="typing-text" class="text-xl md:text-2xl text-slate-400 font-medium"></p>
+            </div>
+            <p class="hero-description text-lg text-slate-400 mb-10 max-w-lg leading-relaxed">
+              Building digital experiences with code, creativity, and intelligence. 
+              5th Year Electrical & Computer Engineering student at Addis Ababa University.
+            </p>
+            <div class="hero-btns flex flex-wrap gap-4">
+              <button class="btn-primary magnetic">Hire Me</button>
+              <button class="btn-outline magnetic">View Projects</button>
+            </div>
+          </div>
+          <div class="hero-image-container relative">
+            <div class="hero-image-wrapper glass">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="Samuel Tigstu" class="hero-img" referrerPolicy="no-referrer" />
+            </div>
+            <div class="floating-card card-1 glass">
+              <div class="icon-box"><i class="lucide-cpu"></i></div>
+              <div>
+                <div class="font-bold">GPA 3.8</div>
+                <div class="text-xs text-slate-400">Academic Excellence</div>
+              </div>
+            </div>
+            <div class="floating-card card-2 glass">
+              <div class="icon-box"><i class="lucide-code"></i></div>
+              <div>
+                <div class="font-bold">25+ Projects</div>
+                <div class="text-xs text-slate-400">Completed Successfully</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-32">
+      <div class="container">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+          <div class="about-image relative reveal">
+            <div class="image-stack">
+              <div class="image-main glass p-4">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop" alt="Tech" class="rounded-2xl" referrerPolicy="no-referrer" />
+              </div>
+              <div class="image-accent glass p-2">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1000&auto=format&fit=crop" alt="AI" class="rounded-xl" referrerPolicy="no-referrer" />
+              </div>
+            </div>
+          </div>
+          <div class="about-content reveal">
+            <h2 class="section-title font-display font-bold text-4xl mb-8">About <span class="text-gradient">Me</span></h2>
+            <p class="text-slate-400 text-lg leading-relaxed mb-6">
+              I am a passionate 5th-year Electrical & Computer Engineering student based in Addis Ababa, Ethiopia. 
+              My journey in technology is driven by a blend of engineering precision and creative expression.
+            </p>
+            <p class="text-slate-400 text-lg leading-relaxed mb-10">
+              With a strong GPA of 3.8, I've balanced my academic rigor with diverse freelance projects, ranging from 
+              full-stack web development to professional video editing and animation. I thrive at the intersection 
+              of AI, automation, and digital storytelling.
+            </p>
+            <div class="about-stats grid grid-cols-2 gap-6">
+              <div class="stat-item glass p-6 rounded-2xl">
+                <div class="text-primary font-bold text-xl mb-1">Languages</div>
+                <div class="text-sm text-slate-300">English, Amharic, German, Spanish</div>
+              </div>
+              <div class="stat-item glass p-6 rounded-2xl">
+                <div class="text-secondary font-bold text-xl mb-1">Location</div>
+                <div class="text-sm text-slate-300">Addis Ababa, Ethiopia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-32 bg-dark-accent">
+      <div class="container">
+        <div class="text-center mb-20 reveal">
+          <h2 class="section-title font-display font-bold text-4xl mb-4">Technical <span class="text-gradient">Expertise</span></h2>
+          <p class="text-slate-400">A comprehensive toolkit for the modern digital landscape</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Skill Category 1 -->
+          <div class="skill-card glass p-10 rounded-3xl reveal">
+            <div class="skill-icon mb-8"><i class="lucide-code-2 text-primary text-3xl"></i></div>
+            <h3 class="text-2xl font-bold mb-6">Development</h3>
+            <div class="skill-list flex flex-wrap gap-3">
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">WordPress</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SMS APIs</span>
+            </div>
+          </div>
+          <!-- Skill Category 2 -->
+          <div class="skill-card glass p-10 rounded-3xl reveal">
+            <div class="skill-icon mb-8"><i class="lucide-video text-secondary text-3xl"></i></div>
+            <h3 class="text-2xl font-bold mb-6">Media & Creative</h3>
+            <div class="skill-list flex flex-wrap gap-3">
+              <span class="skill-tag">CapCut</span>
+              <span class="skill-tag">Premiere Pro</span>
+              <span class="skill-tag">After Effects</span>
+              <span class="skill-tag">Moho</span>
+              <span class="skill-tag">Cartoon Animator</span>
+              <span class="skill-tag">YouTube Strategy</span>
+            </div>
+          </div>
+          <!-- Skill Category 3 -->
+          <div class="skill-card glass p-10 rounded-3xl reveal">
+            <div class="skill-icon mb-8"><i class="lucide-brain-circuit text-accent text-3xl"></i></div>
+            <h3 class="text-2xl font-bold mb-6">AI & Data</h3>
+            <div class="skill-list flex flex-wrap gap-3">
+              <span class="skill-tag">AI Training</span>
+              <span class="skill-tag">Data Labeling</span>
+              <span class="skill-tag">Automation</span>
+              <span class="skill-tag">Technical Research</span>
+              <span class="skill-tag">Data Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-32">
+      <div class="container">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6 reveal">
+          <div>
+            <h2 class="section-title font-display font-bold text-4xl mb-4">Featured <span class="text-gradient">Projects</span></h2>
+            <p class="text-slate-400">A selection of my most impactful work across multiple disciplines</p>
+          </div>
+          <div class="filter-btns flex gap-4">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="creative">Creative</button>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Project 1 -->
+          <div class="project-card glass rounded-3xl overflow-hidden reveal" data-category="web">
+            <div class="project-img-wrapper overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop" alt="SMS API" class="project-img" referrerPolicy="no-referrer" />
+              <div class="project-overlay absolute inset-0 flex items-center justify-center opacity-0 transition-opacity">
+                <button class="btn-circle"><i class="lucide-external-link"></i></button>
+              </div>
+            </div>
+            <div class="project-info p-10">
+              <div class="text-xs font-bold text-secondary uppercase tracking-widest mb-2">Web Development</div>
+              <h3 class="text-2xl font-bold mb-4">SMS API Integration System</h3>
+              <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                Custom backend system integrating Twilio and Infobip for automated marketing workflows and real-time notifications.
+              </p>
+              <div class="project-tech flex gap-3">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Twilio API</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card glass rounded-3xl overflow-hidden reveal" data-category="creative">
+            <div class="project-img-wrapper overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1000&auto=format&fit=crop" alt="Animation" class="project-img" referrerPolicy="no-referrer" />
+              <div class="project-overlay absolute inset-0 flex items-center justify-center opacity-0 transition-opacity">
+                <button class="btn-circle"><i class="lucide-external-link"></i></button>
+              </div>
+            </div>
+            <div class="project-info p-10">
+              <div class="text-xs font-bold text-secondary uppercase tracking-widest mb-2">Animation</div>
+              <h3 class="text-2xl font-bold mb-4">Animated Brand Story</h3>
+              <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                Professional 2D animation sequence created using Moho and Cartoon Animator for a tech startup's marketing campaign.
+              </p>
+              <div class="project-tech flex gap-3">
+                <span class="tech-tag">Moho</span>
+                <span class="tech-tag">After Effects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section py-32 bg-dark-accent">
+      <div class="container">
+        <h2 class="section-title font-display font-bold text-4xl mb-20 text-center reveal">Career <span class="text-gradient">Timeline</span></h2>
+        <div class="timeline relative max-w-4xl mx-auto">
+          <div class="timeline-line absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-secondary to-transparent -translate-x-1/2 hidden md:block"></div>
+          
+          <div class="timeline-item flex flex-col md:flex-row items-center mb-16 reveal">
+            <div class="timeline-dot absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 z-10 shadow-glow hidden md:block"></div>
+            <div class="timeline-content w-full md:w-1/2 p-6 md:pr-16 md:text-right">
+              <div class="glass p-8 rounded-3xl">
+                <div class="text-secondary font-bold mb-1">2021 - Present</div>
+                <h3 class="text-xl font-bold mb-2">Freelance Web Developer</h3>
+                <div class="text-sm text-primary font-medium mb-4">Self-Employed</div>
+                <p class="text-slate-400 text-sm leading-relaxed">Built custom websites, API integrations, and robust backend systems for diverse clients globally.</p>
+              </div>
+            </div>
+            <div class="hidden md:block md:w-1/2"></div>
+          </div>
+
+          <div class="timeline-item flex flex-col md:flex-row-reverse items-center mb-16 reveal">
+            <div class="timeline-dot absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 z-10 shadow-glow hidden md:block"></div>
+            <div class="timeline-content w-full md:w-1/2 p-6 md:pl-16">
+              <div class="glass p-8 rounded-3xl">
+                <div class="text-secondary font-bold mb-1">2022 - 2024</div>
+                <h3 class="text-xl font-bold mb-2">YouTube Channel Manager</h3>
+                <div class="text-sm text-primary font-medium mb-4">Creative Media</div>
+                <p class="text-slate-400 text-sm leading-relaxed">Led video editing and content strategy, optimizing workflows for high-engagement video production.</p>
+              </div>
+            </div>
+            <div class="hidden md:block md:w-1/2"></div>
+          </div>
+
+          <div class="timeline-item flex flex-col md:flex-row items-center reveal">
+            <div class="timeline-dot absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 z-10 shadow-glow hidden md:block"></div>
+            <div class="timeline-content w-full md:w-1/2 p-6 md:pr-16 md:text-right">
+              <div class="glass p-8 rounded-3xl">
+                <div class="text-secondary font-bold mb-1">2020 - 2022</div>
+                <h3 class="text-xl font-bold mb-2">Technical Project Lead</h3>
+                <div class="text-sm text-primary font-medium mb-4">Various Freelance</div>
+                <p class="text-slate-400 text-sm leading-relaxed">Managed animation projects and marketing content automation for small to medium enterprises.</p>
+              </div>
+            </div>
+            <div class="hidden md:block md:w-1/2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-32">
+      <div class="container">
+        <div class="text-center mb-20 reveal">
+          <h2 class="section-title font-display font-bold text-4xl mb-4">My <span class="text-gradient">Services</span></h2>
+          <p class="text-slate-400">Specialized solutions for a digital-first world</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="service-card glass p-10 rounded-3xl text-center reveal">
+            <div class="service-icon mb-8 mx-auto"><i class="lucide-globe text-primary text-4xl"></i></div>
+            <h3 class="text-xl font-bold mb-4">Website Development</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">High-performance, responsive websites tailored to your brand's unique needs.</p>
+          </div>
+          <div class="service-card glass p-10 rounded-3xl text-center reveal">
+            <div class="service-icon mb-8 mx-auto"><i class="lucide-video text-secondary text-4xl"></i></div>
+            <h3 class="text-xl font-bold mb-4">Video Editing</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Professional post-production for YouTube, social media, and corporate content.</p>
+          </div>
+          <div class="service-card glass p-10 rounded-3xl text-center reveal">
+            <div class="service-icon mb-8 mx-auto"><i class="lucide-palette text-accent text-4xl"></i></div>
+            <h3 class="text-xl font-bold mb-4">2D Animation</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Engaging character animations and motion graphics that tell your story.</p>
+          </div>
+          <div class="service-card glass p-10 rounded-3xl text-center reveal">
+            <div class="service-icon mb-8 mx-auto"><i class="lucide-brain-circuit text-primary text-4xl"></i></div>
+            <h3 class="text-xl font-bold mb-4">AI & Data Solutions</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Custom data labeling and AI training workflows to power your intelligent systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-32">
+      <div class="container">
+        <div class="glass-form rounded-[4rem] overflow-hidden reveal">
+          <div class="grid md:grid-cols-2">
+            <div class="contact-info p-16 bg-gradient-to-br from-primary/20 to-accent/20">
+              <h2 class="text-4xl font-display font-bold mb-8">Let's <span class="text-gradient">Connect</span></h2>
+              <p class="text-slate-300 mb-12 text-lg">
+                Have a project in mind or just want to say hi? I'm always open to discussing new opportunities.
+              </p>
+              <div class="contact-methods space-y-8">
+                <div class="method flex items-center gap-6">
+                  <div class="method-icon glass p-4 rounded-2xl"><i class="lucide-mail text-primary"></i></div>
+                  <div>
+                    <div class="text-xs text-slate-400 uppercase tracking-widest">Email</div>
+                    <div class="text-xl font-medium">tigsam789@gmail.com</div>
+                  </div>
+                </div>
+                <div class="method flex items-center gap-6">
+                  <div class="method-icon glass p-4 rounded-2xl"><i class="lucide-phone text-secondary"></i></div>
+                  <div>
+                    <div class="text-xs text-slate-400 uppercase tracking-widest">Phone</div>
+                    <div class="text-xl font-medium">+251 9XX XXX XXX</div>
+                  </div>
+                </div>
+              </div>
+              <div class="social-links mt-16 flex gap-6">
+                <a href="#" class="social-link glass p-5 rounded-2xl"><i class="lucide-github"></i></a>
+                <a href="#" class="social-link glass p-5 rounded-2xl"><i class="lucide-linkedin"></i></a>
+                <a href="#" class="social-link glass p-5 rounded-2xl"><i class="lucide-youtube"></i></a>
+              </div>
+            </div>
+            <div class="contact-form-wrapper p-16">
+              <form class="space-y-8">
+                <div class="grid sm:grid-cols-2 gap-8">
+                  <div class="form-group">
+                    <label class="text-sm font-medium text-slate-400 block mb-3">Name</label>
+                    <input type="text" class="form-input" placeholder="John Doe" />
+                  </div>
+                  <div class="form-group">
+                    <label class="text-sm font-medium text-slate-400 block mb-3">Email</label>
+                    <input type="email" class="form-input" placeholder="john@example.com" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="text-sm font-medium text-slate-400 block mb-3">Subject</label>
+                  <input type="text" class="form-input" placeholder="Project Inquiry" />
+                </div>
+                <div class="form-group">
+                  <label class="text-sm font-medium text-slate-400 block mb-3">Message</label>
+                  <textarea rows="5" class="form-input resize-none" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button class="btn-submit w-full py-5 rounded-2xl font-bold text-lg">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-16 border-t border-white/5">
+      <div class="container flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="logo font-display font-bold text-2xl tracking-tighter">
+          <span class="text-primary">S</span>AMUEL<span class="text-secondary">.</span>
+        </div>
+        <div class="copyright text-slate-500 text-sm">
+          © <span id="year"></span> Samuel Tigstu. All rights reserved.
+        </div>
+        <div class="footer-links flex gap-10">
+          <a href="#" class="text-sm text-slate-400 hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="text-sm text-slate-400 hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
